@@ -42,3 +42,4 @@ bin/
 .DS_Store
 
 /src/main/kotlin/data/*
+!/src/main/kotlin/data/Readme.md

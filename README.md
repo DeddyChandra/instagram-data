@@ -6,9 +6,13 @@
 4. Click "Your Activity" and then scroll down until you find "Download your information" and then click it.
 5. Click "Download or transfer information".
 6. Choose your account.
-7. Choose "All available information"
-8. Download to device then click next
-9. Set the Date range to "All time"
+7. Choose "All available information".
+8. Download to device then click next.
+9. Set the Date range to "All time".
 10. Change the format to JSON and then create files.
 11. You will receive an all the data from your email.
-12. extract 
+12. extract the data to `/src/main/kotlin/data`.
+
+## Step to run apps
+1. Open `/src/main/kotlin/main.kt`
+2. click the `run main.kt`
