@@ -7,7 +7,7 @@ fun main(){
     val followers = followers()
     val getNonFollowers = getNonFollowers(following, followers)
     getNonFollowers.map {
-        println(it.stringListData.first().value)
+        println(it.stringListData.first().extractUsernameFromHref())
         println(it.stringListData.first().href)
     }
 }
@@ -38,7 +38,7 @@ fun followers(): List<User> {
 fun getNonFollowers(followings: List<User>, followers: List<User>): List<User>{
     return followings.filter{following ->
         followers.none{follower ->
-            follower.stringListData.first().value == following.stringListData.first().value
+            follower.stringListData.first().value == following.stringListData.first().extractUsernameFromHref()
         }
     }
 }
